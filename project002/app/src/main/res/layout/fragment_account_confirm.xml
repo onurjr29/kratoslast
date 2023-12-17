@@ -1,0 +1,54 @@
+<!-- res/layout/activity_delete_account.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#1E1E1E">
+
+    <TextView
+        android:id="@+id/textViewDeleteAccountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Deletion"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDeleteAccountTitle"
+        android:layout_marginTop="16dp"
+        android:background="#363636"
+        android:padding="12dp"
+        android:hint="Email"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="20dp"
+        android:background="#363636"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnDeleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="24dp"
+        android:text="Delete Account"
+        android:textColor="#FFFFFF"
+        android:background="#FF0000"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

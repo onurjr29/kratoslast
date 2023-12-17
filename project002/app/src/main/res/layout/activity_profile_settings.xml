@@ -1,0 +1,51 @@
+<!-- res/layout/activity_profile_settings.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#1E1E1E">
+
+    <TextView
+        android:id="@+id/textViewUpdateEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Email"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/editTextNewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUpdateEmailLabel"
+        android:layout_marginTop="16dp"
+        android:background="#363636"
+        android:padding="12dp"
+        android:hint="New Email"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnSaveEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNewEmail"
+        android:layout_marginTop="24dp"
+        android:text="Save EMAIL"
+        android:textColor="#FFFFFF"
+        android:background="#2196F3"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnDeleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSaveEmail"
+        android:layout_marginTop="24dp"
+        android:text="Delete Account"
+        android:textColor="#FFFFFF"
+        android:background="#FF0000"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="675dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textBox"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:padding="12dp"
+            android:background="#363636"
+            android:text="Text"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/inputBox"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="#363636"
+            android:padding="12dp"
+            android:ems="10"
+            android:gravity="top"
+            android:layout_marginTop="16dp"
+            android:inputType="textMultiLine"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/checktBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#2196F3"
+            android:text="Check"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/newBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#2196F3"
+            android:text="New"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/pointView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Point"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:background="#363636"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+    <!--<com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--android:id="@+id/bottomNavigationView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--app:itemIconTint="@color/bottom_nav_item_color_selector"-->
+    <!--app:itemTextColor="@color/bottom_nav_item_color_selector"-->
+    <!--app:menu="@menu/bottom_nav" />-->
+</FrameLayout>

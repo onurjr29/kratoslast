@@ -1,0 +1,94 @@
+<!-- res/layout/activity_sign_up.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="150dp"
+        android:text="Create a Account"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#363636"
+        android:ems="10"
+        android:hint="Username"
+        android:padding="12dp"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_text" />
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:background="#363636"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Password"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:background="#363636"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userEmail" />
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Create"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/createButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>

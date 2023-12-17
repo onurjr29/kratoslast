@@ -1,0 +1,89 @@
+<!-- res/layout/activity_edit_profile.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#1E1E1E">
+
+    <TextView
+        android:id="@+id/textViewChangeUsernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Username"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/editTextNewUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewChangeUsernameLabel"
+        android:layout_marginTop="16dp"
+        android:background="#363636"
+        android:padding="12dp"
+        android:hint="New Username"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnSaveUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNewUsername"
+        android:layout_marginTop="24dp"
+        android:text="Edit Username"
+        android:textColor="#FFFFFF"
+        android:background="#2196F3"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/textViewChangePassLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/btnSaveUsername"
+        android:layout_marginTop="48dp"/>
+
+    <EditText
+        android:id="@+id/editCurrentPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewChangePassLabel"
+        android:layout_marginTop="16dp"
+        android:background="#363636"
+        android:padding="12dp"
+        android:hint="Current Password"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+
+
+    <EditText
+        android:id="@+id/editNewPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editCurrentPass"
+        android:layout_marginTop="16dp"
+        android:background="#363636"
+        android:padding="12dp"
+        android:hint="New Password"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnSavePass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNewPass"
+        android:layout_marginTop="24dp"
+        android:text="Save Password"
+        android:textColor="#FFFFFF"
+        android:background="#2196F3"
+        android:textSize="18sp"/>
+
+
+</RelativeLayout>
